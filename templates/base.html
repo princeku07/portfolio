@@ -1,0 +1,636 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'img/prince.png' %}"/>
+    <title>{%block title %} {%endblock title %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+<body>
+
+    <!-- -------------------header area------------------ -->
+    <style>
+        #logo {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            height: 3rem;
+        }
+    </style>
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light"
+                style="background: linear-gradient(to bottom,#61dfc6, #1abc9c);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/home"><img id="logo" src="{%static 'img/prince.png'%}" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <div class="ms-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="/home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/blog">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/project">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </nav>
+    </header>
+    {%block body%}
+    <!-- ----------------------end header area-------------->
+    <!-- ----------------------start banner area-------------->
+    <main class="site-main">
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Prince</h1>
+                        <h4 class="title-text text-uppercase"> Django Developer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase m-3">Hire
+                                    Me</button>
+                                <button type="button"
+                                    class="btn button secondary-button text-uppercase m-3">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="{%static 'img/m5.png'%}" alt="" class="img-fluid">
+
+                    </div>
+                </div>
+            </div>
+            <img class="wave" src="{%static 'img/wave.png'%}" alt="">
+        </section>
+
+        <!-- ----------------------end banner area-------------->
+        <!-- ----------------------start about area-------------->
+        <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <img src="{%static 'img/whole.png'%}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title ">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti dolor maiores
+                                non consequuntur,
+                            </p>
+                            <p class="para">
+                                kumar Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate cum
+                                voluptatem libero dolorem,
+                            </p>
+                        </div>
+                    </div>
+                        <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------end about area-------------->
+        <!-- ----------------------start brand area-------------->
+        <section class="brand-area">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="experience-area">
+                            <div class="d-flex flex-row years-area">
+                                <h2 class="p-3 years"></h2>
+                                <h2>
+                                    <span>Works</span>
+                                    <span>With</span>
+                                    
+                                </h2>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap call-area">
+
+                            </div>
+                            <div class="bg-panel"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="row first-row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                                    filter: grayscale(100%);" src="{%static 'img/library.jpg'%}" class="img-fluid"
+                                        alt="">
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------end brand area-------------->
+
+        <!-- --------------------- start service-------------------- -->
+        <div class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="service text-uppercase">Services offers</h1>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptate voluptatum
+                            corrupti quidem ea ullam omnis veniam blanditiis s
+                        </p>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/1.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">django developer</h5>
+                                    <div class="card-text text-secondary">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque
+                                        eligendi placeat odio veritatis facere dolores, assumenda ab eveniet ad cumque
+                                        recusandae
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class=" services">
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/4.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">machine learning</h5>
+                                    <div class="card-text text-secondary">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque
+                                        eligendi placeat odio veritatis facere dolores, assumenda ab eveniet ad cumque
+                                        recusandae
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class=" services">
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/2.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">front end</h5>
+                                    <div class="card-text text-secondary">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque
+                                        eligendi placeat odio veritatis facere dolores, assumenda ab eveniet ad cumque
+                                        recusandae
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class=" services">
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/3.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">deep learning</h5>
+                                    <div class="card-text text-secondary">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque
+                                        eligendi placeat odio veritatis facere dolores, assumenda ab eveniet ad cumque
+                                        recusandae
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------- end service-------------------- -->
+
+        <!-- ---------------------start project area-------------------- -->
+
+        <section class="porject-area">
+            <style>
+
+            </style>
+            <div class="container">
+                <div class="project-title pb-3">
+                    <h1 class="text-uppercase title-h1" style="font-family:'Roboto Mono', monospace; 
+                    color: rgb(2, 30, 63);
+                    text-shadow: 1px 1.5px #312f2f;">
+                        projects
+                    </h1>
+                </div>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('latest')"> latest</button>
+                    <button class="btn" onclick="filterSelection('popular')"> popular</button>
+
+                </div>
+                <style>
+                    
+
+                    /* Add padding BETWEEN each column */
+                    .second-row,
+                    .second-row>.column1 {
+                        padding: 7px;
+                    }
+
+                    /* Create three equal columns that floats next to each other */
+                    .column1 {
+                        float: left;
+                        width: 33.33%;
+                        display: none;
+                        /* Hide all elements by default */
+                    }
+
+                    /* Clear floats after rows */
+                    .second-row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+
+                    /* Content */
+                    .content1 {
+                        background-color: white;
+                        padding: 10px;
+                    }
+
+                    /* The "show" class is added to the filtered elements */
+                    .show {
+                        display: block;
+                    }
+
+                    /* Style the buttons */
+                    #myBtnContainer .btn {
+                        border: none;
+                        outline: none;
+                        padding: 12px 16px;
+                        background-color: white;
+                        cursor: pointer;
+                    }
+
+
+
+                    #myBtnContainer .btn.active {
+
+                        color: rgb(53, 109, 201);
+                    }
+                </style>
+                <!-- Portfolio Gallery Grid -->
+                <div class="row second-row">
+                    <div class="column column1 latest">
+                        <div class="content1">
+                            <img src="{%static 'img/1.png'%}" alt="Mountains" style="width:100%">
+                            <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">title</h4>
+                            <span class="text-secondary">latest</span>
+                        </div>
+                    </div>
+                    <div class="column column1 popular">
+                        <div class="content1">
+                            <img src="{%static 'img/3.png'%}" alt="Lights" style="width:100%">
+                            <div class="title py-4">
+                                <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                <span class="text-secondary">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column1 popular">
+                        <div class="content1">
+                            <img src="{%static 'img/3.png'%}" alt="Lights" style="width:100%">
+                            <div class="title py-4">
+                                <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                <span class="text-secondary">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column1 popular">
+                        <div class="content1">
+                            <img src="{%static 'img/3.png'%}" alt="Lights" style="width:100%">
+                            <div class="title py-4">
+                                <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                <span class="text-secondary">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column1 popular">
+                        <div class="content1">
+                            <img src="{%static 'img/3.png'%}" alt="Lights" style="width:100%">
+                            <div class="title py-4">
+                                <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                <span class="text-secondary">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- END GRID -->
+                </div>
+                <script>
+                    filterSelection("all")
+                    function filterSelection(c) {
+                        var x, i;
+                        x = document.getElementsByClassName("column");
+                        if (c == "all") c = "";
+                        for (i = 0; i < x.length; i++) {
+                            w3RemoveClass(x[i], "show");
+                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                        }
+                    }
+
+                    function w3AddClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                        }
+                    }
+
+                    function w3RemoveClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            while (arr1.indexOf(arr2[i]) > -1) {
+                                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                            }
+                        }
+                        element.className = arr1.join(" ");
+                    }
+
+
+                    // Add active class to the current button (highlight it)
+                    var btnContainer = document.getElementById("myBtnContainer");
+                    var btns = btnContainer.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function () {
+                            var current = document.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                        });
+                    }
+                </script>
+        </section>
+
+        <!-- --------------------- end project area-------------------- -->
+
+    </main>
+    <!-- ----------------------start about area-------------->
+    
+{%endblock body%}
+
+<section class="footer">
+<style>
+    .footer{
+        height: 100%;
+        position: relative;
+        background: linear-gradient(to bottom,#61dfc6, #1abc9c);
+    }
+    .footer .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .footer .container > div{
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 3rem .9rem;
+    }
+    
+    .footer .container h2{
+        color: rgb(4, 116, 41);
+    }
+    
+    .footer .newsletter .form-element{
+        background: black;
+        display: inline-block;
+    }
+    
+    .footer .newsletter .form-element input{
+        padding: .5rem .7rem;
+        border: none;
+        background: transparent;
+        color: white;
+        font-family: var(--Josefin);
+        font-size: 1rem;
+        width: 74%;
+    }
+    
+    .footer .newsletter .form-element span{
+        background: red;
+        padding: .5rem .7rem;
+        cursor: pointer;
+    }
+    
+    .footer .instagram div > img{
+        display: inline-block;
+        width: 25%;
+        height: 50%;
+        margin: .3rem .4rem;
+    }
+    
+    .footer .follow div i{
+        color: rgb(0, 0, 0);
+        padding: 0 .4rem;
+        font-size: 27px;
+    }
+    .footer .follow div i:hover{
+        color: rgb(224, 15, 15);
+        
+        
+    }
+    
+    .footer .rights{
+        justify-content: center;
+        font-family: var(--Josefin);
+    }
+    
+    .footer .rights h4 a{
+        color: white;
+    }
+    @media only screen and (max-width: 1130px){
+
+         footer.footer .container{
+             grid-template-columns: repeat(2, 1fr);
+         }
+     
+     }
+     
+     /*      x       Viewport less then or equal to 1130px    x     */
+     
+     
+     /*              Viewport less then or equal to 750px            */
+     
+     @media only screen and (max-width: 750px){
+         footer.footer .container{
+             grid-template-columns: repeat(1, 1fr);
+         }
+     
+     }
+     
+     
+     /*        x      Viewport less then or equal to 750px       x     */
+     
+     
+     /*              Viewport less then or equal to 520px            */
+     
+     @media only screen and (max-width: 520px){
+         
+         
+     
+         footer.footer .container > div{
+             padding:  1rem .9rem !important;
+         }
+     
+         footer .rights{
+             padding: 0 1.4rem;
+             text-align: center;
+         }
+     
+         
+     }
+</style>
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2>About </h2>
+            <p>I am Prince, I develop website ,write blogs related to  Machine Learning, Data Science, Python  and also keeps interest in UI design using html and css.</p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Newsletter</h2>
+            <p>Stay update with our latest</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <!-- <h2>Blogs</h2>
+            <div class="flex-row">
+                {%for post in post_list%}
+                <img src="{{post.image.url}}" alt="insta1">
+                {%endfor%}
+            </div> -->
+            
+            
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            
+            <div>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row text-center">
+        <h4 class="text-gray">
+            Copyright ©2021 All rights reserved | Prince
+            
+        </h4>
+    </div>
+    
+</footer>
+</section>
+<style>
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 40px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+ 
+  
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
+<!-- ----------------------end about area-------------->
+    <script src="{%static 'js/jquery3.6.0.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+
+
+</body>
+
+</html>

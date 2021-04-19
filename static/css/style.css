@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:wght@300&family=Roboto+Mono&family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: 1px;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 1px 2px #888888;
+    z-index: 999;
+    transition: background 1s ease;
+}
+/* -----------------navbar---------------- */
+.header_area .main-menu .nav-item .nav-link{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: rgb(14, 14, 14);
+}
+.header_area .main-menu .navbar{
+    background: linear-gradient(to bottom, #1abc9c,#9cfbe8);
+ background-blend-mode: multiply,multiply;
+}
+.header_area .main-menu .navbar {
+   background: transparent;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: linear-gradient(rgb(228, 84, 84),rgb(243, 12, 12));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+
+}
+/* ---------------------banner------------------ */
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+.site-main .site-banner{
+    background: linear-gradient(to bottom, #1abc9c,#9cfbe8);
+    background-blend-mode: multiply,multiply;
+    padding-top: 0;
+    
+}
+.site-main .site-banner .wave{
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    width: 100%;
+}
+.site-main .site-banner .site-title h1{
+    font-weight: 800;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #9e3228;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #e93a2e 33.333%, 
+        #141414 50%, 
+        #989762 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+    font-size: 3rem;
+    
+    background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+    
+}
+
+.site-main .site-banner .site-title h1:hover{
+    font-size: 3rem;
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+
+}
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+.site-main .site-banner .site-title h4{
+    
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(175, 174, 174);
+}
+.site-main .site-banner .site-title h3{
+    
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(250, 65, 65);
+    font-size: 4rem;
+    text-shadow: 5px 5px #312f2f;
+}
+.site-main .site-banner .site-title h3::after{
+   content: '';
+   height: 2px;
+   width: 24vw;
+   background: black;
+   display: inline-block;
+   margin-left: 5%;
+   transform: translateY(-10px);
+}
+.title-text{
+    font: normal bold 50px/ 72px;
+    font-family:'Roboto Mono', monospace;
+}
+.button{
+    font: normal 500 16px/20px;
+    font-family:'Roboto Mono', monospace; 
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    
+}
+
+.button.primary-button{
+    background: linear-gradient(to right ,#fb3f3f,rgb(0, 0, 0));
+    background-clip: padding-box;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 1px 2px #888888;
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    box-shadow: 5px 6px #888888;
+}
+.button.primary-button::after{
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    bottom: -2px;
+    right: -2px;
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+.button.secondary-button{
+    background: linear-gradient(to right ,rgb(0, 0, 0),rgb(221, 44, 44));
+    background-clip: padding-box;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: background.6s ease;
+    box-shadow: 1px 2px #888888;
+}
+.button.secondary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    box-shadow: 5px 6px #888888;
+}
+/* --------------------start about area----------------- */
+.site-main .about-area{
+    padding: 2.5rem 4rem;
+}
+.site-main .about-area .about-title h2 >span{
+    display: block;
+    font: normal 49px/ 60px;
+    letter-spacing: 5px;
+    font: bolder;
+    font-family:'Roboto Mono', monospace; 
+
+}
+.site-main .about-area .about-title .paragraph .para {
+    color: black;
+    font: normal 500 16px/ 25px;
+    
+}
+
+
+/* --------------------end about area----------------- */
+/* --------------------start brand area----------------- */
+.site-main .brand-area{
+    padding: 1rem 1rem ;
+    margin-bottom: 0rem;
+}
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+    
+}
+.site-main .brand-area .first-row .col-lg-4 >.single-brand{
+    padding: 1.3rem 0rem;
+    cursor: pointer;
+    transition: transform .4s ease;
+    opacity: 0.5;
+}
+/* .site-main .brand-area .first-row .col-lg-4 >.single-brand:hover{
+    
+    -webkit-box-shadow: 0 10px 6px -6px rgba(167, 165, 165, 0.2);
+     -moz-box-shadow: 0 10px 6px -6px rgba(167, 165, 165, 0.2);
+          box-shadow: 0 10px 6px -6px  rgba(167, 165, 165, 0.2);
+    transform: scale(1.1);
+} */
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+.site-main .brand-area .experience-area .years-area{
+    background-image: linear-gradient(to top,red,black);
+    padding: 2rem 0;
+    width: 9.3rem;
+    height: 8rem;
+    border-radius: 20px;
+    
+    position: relative;
+}
+.site-main .brand-area .experience-area {
+    padding: 2rem 2rem;
+    width: 17rem;
+    height: 9rem;
+    background-image: linear-gradient(to bottom,red,black);
+    border-radius: 20px;
+    
+}
+.site-main .brand-area .experience-area .years-area .years{
+    color:blue;
+    font-size: 3rem;
+}
+.site-main .brand-area .experience-area .years-area h2{
+    font-family:'Roboto Mono', monospace; 
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1.2px #312f2f;
+}
+/* --------------------end brand area----------------- */
+/* ---------------------start services area-------------------- */
+.site-main .services-area{
+    padding: 0 1rem;
+    margin-top: 0;
+}
+.site-main .services-area .services-title{
+    padding: 0 1.4rem;
+}
+
+
+.site-main .services-area .services-title h1{
+    font-size: 40px;
+    font-family:'Roboto Mono', monospace; 
+    color: rgb(2, 30, 63);
+    text-shadow: 1px 1.2px #312f2f;
+}
+.site-main .services-area .services{
+    background-image: linear-gradient(to bottom,#6eeed4,#ffffff);
+    padding: 2rem 0;
+    border-radius: 20px;
+    width: 16rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1.4rem .5rem;
+    color: rgb(16, 78, 1);
+    transition: transform .4s ease;
+}
+
+.site-main .services-area .services:hover{
+    box-shadow: 0 16px 32px 0 rgba(167, 165, 165, 0.2);
+    transform: scale(1.1);
+}
+/* ---------------------end services area-------------------- */
+/* ---------------------start project area -------------------------- */
+.site-main .project-area{
+    padding-top: 1rem;
+}
+
+
+/* ---------------------end project area -------------------------- */
+.site-main .subscribe-us-area .subscribe{
+    background-image: linear-gradient(to right,purple,blue);
+    
+    padding: 9rem 0;
+    margin: 2rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/ 30px ;
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 320px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+}
+/* ----------------------start footer area-------------------------- */
+
+
+/* -----------------------end footer area-------------------------- */

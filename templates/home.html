@@ -1,0 +1,335 @@
+{%extends 'base.html'%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    {%block body%}
+    <main class="site-main">
+        
+        <section class="site-banner" style="background-image: (to bottom,#61dfc6, #1abc9c);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Prince</h1>
+                        <h4 class="title-text text-uppercase" style="color: rgb(54, 54, 54);">Full stack Developer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase m-3">Hire
+                                    Me</button>
+                                <a href="/blog"><button type="button"
+                                    class="btn button secondary-button text-uppercase m-3">Go to Blogs</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="{%static 'img/m5.png'%}" alt="" class="img-fluid">
+
+                    </div>
+                </div>
+            </div>
+            <img class="wave" src="{%static 'img/wave.png'%}" alt="">
+        </section>
+
+        <!-- ----------------------end banner area-------------->
+                <!-- ---------------------start project area-------------------- -->
+
+                <section class="porject-area">
+                    <style>
+        
+                    </style>
+                    <div class="container">
+                        <div class="project-title pb-3">
+                            <h1 class="text-uppercase title-h1" style="font-family:'Roboto Mono', monospace; 
+                            color: rgb(2, 30, 63);
+                            text-shadow: 1px 1.5px #312f2f;">
+                                projects
+                            </h1>
+                        </div>
+                        <div id="myBtnContainer">
+                            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                            <button class="btn" onclick="filterSelection('latest')"> latest</button>
+                            <button class="btn" onclick="filterSelection('popular')"> popular</button>
+        
+                        </div>
+                        <style>
+                            
+        
+                            /* Add padding BETWEEN each column */
+                            .second-row,
+                            .second-row>.column1 {
+                                padding: 7px;
+                            }
+        
+                            /* Create three equal columns that floats next to each other */
+                            .column1 {
+                                float: left;
+                                width: 33.33%;
+                                display: none;
+                                /* Hide all elements by default */
+                            }
+        
+                            /* Clear floats after rows */
+                            .second-row:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+        
+                            /* Content */
+                            .content1 {
+                                background-color: white;
+                                padding: 10px;
+                            }
+        
+                            /* The "show" class is added to the filtered elements */
+                            .show {
+                                display: block;
+                            }
+        
+                            /* Style the buttons */
+                            #myBtnContainer .btn {
+                                border: none;
+                                outline: none;
+                                padding: 12px 16px;
+                                background-color: white;
+                                cursor: pointer;
+                            }
+        
+        
+        
+                            #myBtnContainer .btn.active {
+        
+                                color: rgb(53, 109, 201);
+                            }
+                        </style>
+                        <!-- Portfolio Gallery Grid -->
+                        <div class="row second-row">
+                            <div class="column column1 latest">
+                                <div class="content1">
+                                    <img src="{%static 'img/post-1.jpg'%}" alt="Mountains" style="width:100%">
+                                    <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">title</h4>
+                                    <span class="text-secondary">latest</span>
+                                </div>
+                            </div>
+                            <div class="column column1 popular">
+                                <div class="content1">
+                                    <img src="{%static 'img/post-3.jpg'%}" alt="Lights" style="width:100%">
+                                    <div class="title py-4">
+                                        <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">machine learning </h4>
+                                        <span class="text-secondary">Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column column1 popular">
+                                <div class="content1">
+                                    <img src="{%static 'img/post-7.jpg'%}" alt="Lights" style="width:100%">
+                                    <div class="title py-4">
+                                        <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                        <span class="text-secondary">Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column column1 popular">
+                                <div class="content1">
+                                    <img src="{%static 'img/post-5.png'%}" alt="Lights" style="width:100%">
+                                    <div class="title py-4">
+                                        <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                        <span class="text-secondary">Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column column1 popular">
+                                <div class="content1">
+                                    <img src="{%static 'img/post-3.jpg'%}" alt="Lights" style="width:100%">
+                                    <div class="title py-4">
+                                        <h4 style="font-family:'Roboto Mono', monospace;" class="text-uppercase">django</h4>
+                                        <span class="text-secondary">Popular</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- END GRID -->
+                        </div>
+                        <script>
+                            filterSelection("all")
+                            function filterSelection(c) {
+                                var x, i;
+                                x = document.getElementsByClassName("column");
+                                if (c == "all") c = "";
+                                for (i = 0; i < x.length; i++) {
+                                    w3RemoveClass(x[i], "show");
+                                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                }
+                            }
+        
+                            function w3AddClass(element, name) {
+                                var i, arr1, arr2;
+                                arr1 = element.className.split(" ");
+                                arr2 = name.split(" ");
+                                for (i = 0; i < arr2.length; i++) {
+                                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                                }
+                            }
+        
+                            function w3RemoveClass(element, name) {
+                                var i, arr1, arr2;
+                                arr1 = element.className.split(" ");
+                                arr2 = name.split(" ");
+                                for (i = 0; i < arr2.length; i++) {
+                                    while (arr1.indexOf(arr2[i]) > -1) {
+                                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                                    }
+                                }
+                                element.className = arr1.join(" ");
+                            }
+        
+        
+                            // Add active class to the current button (highlight it)
+                            var btnContainer = document.getElementById("myBtnContainer");
+                            var btns = btnContainer.getElementsByClassName("btn");
+                            for (var i = 0; i < btns.length; i++) {
+                                btns[i].addEventListener("click", function () {
+                                    var current = document.getElementsByClassName("active");
+                                    current[0].className = current[0].className.replace(" active", "");
+                                    this.className += " active";
+                                });
+                            }
+                        </script>
+                </section>
+        <!-- -----------------blogs---------------- -->
+       
+                <!-- --------------------- end project area-------------------- -->
+                   
+        <!-- ----------------------start about area-------------->
+        <!-- <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <img src="{%static 'img/whole.png'%}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title ">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti dolor maiores
+                                non consequuntur,
+                            </p>
+                            <p class="para">
+                                kumar Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate cum
+                                voluptatem libero dolorem,
+                            </p>
+                        </div>
+                    </div>
+                        <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ----------------------end about area-------------->
+ 
+        <!-- --------------------- start service-------------------- -->
+        <div class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="service text-uppercase">Services offers</h1>
+                        <p class="para">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="services">
+                                <style>
+                                    .card-text{
+                                        color: white;
+                                    }
+                                </style>
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/1.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">django developer</h5>
+                                    <div class="card-text text-secondary" style="color: white;">
+                                        Develop dynamic website as per requirements using Django backend, include Ml powered features.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class=" services">
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/4.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">machine learning</h5>
+                                    <div class="card-text text-secondary">
+                                        Use machine learning to solve problems, analyse data to get useful insights using charts and graphs.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class=" services">
+                                <div class="services-img text-center py-4">
+                                    <img width="90" height="90" src="{%static 'img/2.png'%}" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">front end</h5>
+                                    <div class="card-text text-secondary">
+                                       HTML and CSS is must for front end but other libraries may be used as per requirements
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------- end service-------------------- -->
+        <div class="services-area mb-5 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <div class="experience-area ">
+                            <div class="d-flex flex-row years-area text-center">
+                                <h2 class="p-3 years"></h2>
+                                <h2>
+                                  
+                                    
+                                </h2>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap call-area">
+
+                            </div>
+                            <div class="bg-panel"></div>
+                        </div>
+                        <img style="size:50px;-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                                            filter: grayscale(100%);" width="700px" height="700px" src="{%static 'img/library.jpg'%}" class="img-fluid"
+                                                alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    
+    </main>
+    {%endblock body%}
+</body>
+</html>
