@@ -11,6 +11,13 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
+# import dj_database_url
+from decouple import config
+
+from django.contrib.messages import constants as messages
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +32,7 @@ SECRET_KEY = 'a0nvz22&!#)$ie6g-jjfq^nrrh1!24bit&1yjhh6o_w@*yga&)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kumarprince.herokuapp.com','kumarprince.com']
+ALLOWED_HOSTS = ['kumarprince.herokuapp.com','kumarprince.com','127.0.0']
 
 
 # Application definition
@@ -136,6 +143,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT= os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+django_heroku.settings(locals())
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
